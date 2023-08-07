@@ -23,7 +23,6 @@ function Edit() {
   };
   return (
     <div>
-      <h1>You are in the edit page</h1>
       <br />
       <br />
       <br />

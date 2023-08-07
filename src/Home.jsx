@@ -24,7 +24,6 @@ function Home() {
 
   return (
     <div>
-      <h1>This is home</h1>
       <input ref={reff} type="text" placeholder="type here" />
       <button onClick={handleClick}>Add</button>
       <ul>

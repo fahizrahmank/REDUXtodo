@@ -18,8 +18,8 @@ const todoSlice = createSlice({
         found.id = parseInt(id);
         found.added = added;
       }
-    }
-  }
+    },
+  },
 });
 export const { addtodo, removetodo, updatetodo } = todoSlice.actions;
 export default todoSlice.reducer;
