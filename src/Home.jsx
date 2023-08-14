@@ -4,6 +4,8 @@ import { addtodo, removetodo } from "./UserReducer";
 import { useNavigate } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
+import Button from 'react-bootstrap/Button';
+
 
 function Home() {
   const reff = useRef();
@@ -42,7 +44,8 @@ function Home() {
           aria-describedby="inputGroup-sizing-sm"
         />
       </InputGroup>
-        <button onClick={handleClick}>Add</button>
+        {/* <button >Add</button> */}
+        <Button onClick={handleClick} variant="outline-success">Success</Button>{' '}
         <ul>
           {todoList.map((e) => (
             <li key={e.id}>
@@ -51,6 +54,8 @@ function Home() {
               <button id={e.id} onClick={delet}>
                 delete
               </button>
+             
+
             </li>
           ))}
         </ul>
